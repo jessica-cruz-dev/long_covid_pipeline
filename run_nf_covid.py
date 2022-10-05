@@ -10,11 +10,7 @@ from run.constants import (
 
 
 class RunNfCovid(object):
-    """
-    Descprtion,
-
-    Go back and add return type to all functions
-    at staticmethod decorator to functions
+    """Instances of this class represent a long covid pipeline run.
     """
     def __init__(
         self,
@@ -35,7 +31,7 @@ class RunNfCovid(object):
         mark_as_best: bool = False,
         save_incidence: bool = False,
     ) -> None:
-        """Creates a new ``Nonfatal covid Jobmon`` model instance.
+        """Creates a new ``Nonfatal long covid Jobmon`` model instance.
 
         Args:
             output_version (str): Name of the output version the data is being
