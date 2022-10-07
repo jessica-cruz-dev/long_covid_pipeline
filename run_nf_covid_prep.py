@@ -1,5 +1,20 @@
 '''
     Script that launches the non-fatal COVID pipeline.
+
+    Edited to:
+    - include argparse
+    - extract out misc functions
+    - use an object oriented Jobmon implementation
+    - formatted with Flake8
+
+    python run_nf_covid_prep.py \
+        --output-version 2022-01-12.01 \
+        --input-data-version 2022_01_05.06 \
+        --definition who \
+        --location-set-id 35 \
+        --release-id 9  \
+        --estimation-years 2022 2021 2022
+
 '''
 
 import argparse
