@@ -36,20 +36,24 @@ class RunNfCovid(object):
         Args:
             output_version (str): Name of the output version the data is being
                 written to
-            job_name (str):
-            locations (List[int]):
-            logs_loc (str):
-            age_groups (List[int]):
+            job_name (str): Name of the output folder the data is being written
+                to
+            locations (List[int]): List of locations to run the pipeline on
+            logs_loc (str): The path to the error and output jobmon logs 
+            age_groups (List[int]): List of age groups to run the pipeline on
             location_set_id (int): The location set to run the pipeline on
             input_data_version (str): The hospitalizations and infections input
                 data version
-            hsp_icu_input_path (str):
-            infect_death_input_path (str):
+            hsp_icu_input_path (str): The path to the icu hospitalization 
+                pipeline estimates
+            infect_death_input_path (str): The path to the infected deaths 
+                pipeline estimates
             definition (str): How the acute phase is defined
             release_id (int): The release id to use for shared functions
             estimation_years (List[int]): List of estimation years (starts
                 after 2019)
-            all_gbd_estimation_years (List[int]):
+            all_gbd_estimation_years (List[int]): List of estimation years that
+                includes both gbd estimation years and pipeline years
             db_description (str): Description to add to the database if saving
                 run to Epi db
             mark_as_best (bool): If ``True``, then marks run as best if saving
