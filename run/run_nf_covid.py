@@ -1,6 +1,8 @@
-from jobmon.client.tool import Tool
 from utils.utils import roots
 from typing import Dict, List
+
+from jobmon.client.tool import Tool
+
 from run.constants import (
     LongSaveConstants,
     ShortSaveConstants,
@@ -322,7 +324,7 @@ class RunNfCovid(object):
 
             self.wf.add_task(diag_task)
 
-    def run(self):
+    def run(self) -> str:
         """Kicks off the workflow with assigned timeout and gives the option
         to resume if workflow fails.
         """
