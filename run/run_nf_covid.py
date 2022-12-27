@@ -11,7 +11,7 @@ from run.constants import (
 )
 
 
-class RunNfCovid(object):
+class RunNfCovid:
     """Instances of this class represent a long covid pipeline run.
     """
     def __init__(
