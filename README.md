@@ -1,8 +1,8 @@
 # long_covid_pipeline
 
-## Object oriented implementation of the long covid pipeline 
+## - Object oriented implementation of the long covid pipeline 
 
-# Class and class constants defined in run/ folder  
+## - Class and class constants defined in run/ folder  
 
 At IHME, I've had the opportunity to work on multiple teams as a Surge Data Specialist. One of these was the Nonfatal and Risk Factors Quality Enhancements team where I was tasked with updating the pipeline to be compatible with our new SLURM HPC cluster and then running the pipeline on new data for paper production. 
 
